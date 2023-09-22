@@ -9,7 +9,16 @@ namespace SampleRestApi.ViewModels
 
         [Required]
         [StringLength(100)]
-        public string Name { get; set; } = string.Empty;
+        public string FirstName { get; set; } = string.Empty;
+
+        [Required]
+        [StringLength(100)]
+        public string LastName { get; set; } = string.Empty;
+
+        [Required]
+        [EmailAddress]
+        [StringLength(150)]
+        public string Email { get; set; } = string.Empty;
 
         public AccountViewModel? Account { get; set; }
 

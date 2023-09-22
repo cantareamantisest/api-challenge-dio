@@ -104,9 +104,9 @@ namespace SampleRestApi.Controllers
 
             try
             {
-                await _context.Users.AddAsync(_mapper.Map<User>(model));
+                var userAdded = await _context.Users.AddAsync(_mapper.Map<User>(model));
                 await _context.SaveChangesAsync();
-                return Created($"v1/users/{model.IdUser}", model);
+                return Created($"v1/users/{userAdded.Entity.IdUser}", userAdded.Entity);
             }
             catch (Exception)
             {
@@ -152,7 +152,9 @@ namespace SampleRestApi.Controllers
 
             try
             {
-                user.Name = model.Name;
+                user.FirstName = model.FirstName;
+                user.LastName = model.LastName;
+                user.Email = model.Email;
                 user.Account.Number = model.Account.Number;
                 user.Account.Agency = model.Account.Agency;
                 user.Account.Balance = model.Account.Balance;

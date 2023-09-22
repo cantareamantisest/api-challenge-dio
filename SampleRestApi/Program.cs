@@ -17,7 +17,7 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "Documentação Web API",
-        Description = "Esta API é uma versão .Net Core da API desenvolvida por Venilton Falvo Jr.\nA versão original se encontra no repositório GitHub do DIO https://github.com/digitalinnovationone/santander-dev-week-2023-api/tree/main",
+        Description = "Esta API é uma versão .Net 6.0 da API desenvolvida por Venilton Falvo Jr.\nA versão original se encontra no repositório GitHub do DIO https://github.com/digitalinnovationone/santander-dev-week-2023-api/tree/main",
         Version = "v1",
         Contact = new OpenApiContact()
         {

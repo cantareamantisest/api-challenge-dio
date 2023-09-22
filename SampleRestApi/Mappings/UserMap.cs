@@ -15,7 +15,15 @@ namespace SampleRestApi.Mappings
             builder.Property(c => c.IdUser)
                 .HasColumnType("INTEGER");
 
-            builder.Property(c => c.Name)
+            builder.Property(c => c.FirstName)
+                .HasColumnType("TEXT")
+                .IsRequired();
+
+            builder.Property(c => c.LastName)
+                .HasColumnType("TEXT")
+                .IsRequired();
+
+            builder.Property(c => c.Email)
                 .HasColumnType("TEXT")
                 .IsRequired();
 

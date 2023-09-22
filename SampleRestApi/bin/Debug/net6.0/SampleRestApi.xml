@@ -151,5 +151,17 @@
         <member name="M:SampleRestApi.Migrations.InitialDatabase.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:SampleRestApi.Migrations.UpdateUser">
+            <inheritdoc />
+        </member>
+        <member name="M:SampleRestApi.Migrations.UpdateUser.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SampleRestApi.Migrations.UpdateUser.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SampleRestApi.Migrations.UpdateUser.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>
