@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SampleRestApi.Data;
 using SampleRestApi.Models;
+using SampleRestApi.Service.Interfaces;
 using SampleRestApi.ViewModels;
 
 namespace SampleRestApi.Controllers
@@ -13,11 +14,13 @@ namespace SampleRestApi.Controllers
     {
         private readonly AppDbContext _context;
         private readonly IMapper _mapper;
+        private readonly IEmailService _emailService;
 
-        public UserController(IMapper mapper, AppDbContext context)
+        public UserController(IMapper mapper, AppDbContext context, IEmailService emailService)
         {
             _mapper = mapper;
             _context = context;
+            _emailService = emailService;
         }
 
         /// <summary>
@@ -43,6 +46,31 @@ namespace SampleRestApi.Controllers
                 .ToListAsync();
             return Ok(_mapper.Map<IEnumerable<UserViewModel>>(users));
         }
+
+        /// <summary>
+        /// Obter uma lista dos usuários por sobrenome com limite
+        /// </summary>
+        /// <remarks>
+        /// Obtém uma lista com filtro baseado no sobrenome dos usuários cadastrados
+        /// </remarks>
+        /// <returns></returns>
+        /// <response code="200">
+        /// Success
+        /// </response>
+        //[HttpGet]
+        //[Route("users")]
+        //public async Task<ActionResult<IEnumerable<UserViewModel>>> GetByLastnameAsync([FromRoute] string lastName, [FromRoute] int limit = 5)
+        //{
+        //    var users = await _context.Users
+        //        .Include(c => c.Account)
+        //        .Include(c => c.Card)
+        //        .Include(c => c.Features)
+        //        .Include(c => c.News)
+        //        .AsNoTracking()
+        //        .Where(c => c.LastName == lastName)
+        //        .ToListAsync();
+        //    return Ok(_mapper.Map<IEnumerable<UserViewModel>>(users));
+        //}
 
         /// <summary>
         /// Obter um usuário pelo Id
@@ -167,6 +195,11 @@ namespace SampleRestApi.Controllers
                 if (model.News.Count > 0)
                 {
                     var news = _mapper.Map<List<News>>(model.News);
+                    foreach (var item in model.News)
+                    {
+                        var email = new EmailViewModel { To = model.Email, Subject = "Tenho uma ótima noticia pra você", Body = item.Description };
+                        _emailService.SendEmail(email);
+                    }
                     user.News.AddRange(news);
                 }
 

@@ -92,7 +92,9 @@ C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\SampleRestApi.pdb
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\SampleRestApi.xml
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\AutoMapper.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\Humanizer.dll
+C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\MailKit.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -110,6 +112,7 @@ C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\Microsoft.Extensions.Log
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\MimeKit.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\Mono.TextTemplating.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\SQLitePCLRaw.batteries_v2.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\SQLitePCLRaw.core.dll
@@ -118,6 +121,9 @@ C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.S
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\System.CodeDom.dll
+C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\System.Formats.Asn1.dll
+C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\System.Text.Json.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\runtimes\alpine-arm\native\libe_sqlite3.so
@@ -143,6 +149,8 @@ C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\runtimes\win-arm\native\
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
 C:\DIO\api-challenge-dio\SampleRestApi\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\DIO\api-challenge-dio\SampleRestApi\obj\Debug\net6.0\SampleRestApi.csproj.AssemblyReference.cache
 C:\DIO\api-challenge-dio\SampleRestApi\obj\Debug\net6.0\SampleRestApi.GeneratedMSBuildEditorConfig.editorconfig

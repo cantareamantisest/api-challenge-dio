@@ -4,6 +4,23 @@
         <name>SampleRestApi</name>
     </assembly>
     <members>
+        <member name="M:SampleRestApi.Controllers.AppSettingsController.PutAsync(SampleRestApi.ViewModels.SmtpServerViewModel)">
+            <summary>
+            Atualizar configuração do servidor SMTP
+            </summary>
+            <remarks>
+            Atualiza a configuração do servidor SMTP para testar o envio de Email. Observação: Crie uma conta no link www.etheral.com
+            </remarks>
+            <returns name="model">
+            Configuração atualizada com sucesso!
+            </returns>
+            <response code="200">
+            Success
+            </response>
+            <response code="400">
+            Bad Request
+            </response>
+        </member>
         <member name="M:SampleRestApi.Controllers.FeaturesController.GetAsync">
             <summary>
             Obter uma lista das features
