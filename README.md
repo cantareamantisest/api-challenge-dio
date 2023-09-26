@@ -75,4 +75,4 @@ Esta API ficará disponível no Railway por um período de tempo limitado, mas e
 ### IMPORTANTE
 
 - Essa API foi ela elaborada para fins educacionais. Considere seu uso em ambiente de produção.
-- URL de Produção: https://api-challenge-dio-production.up.railway.app/swagger/index.html
+- URL de Produção: https://api-challenge-dio-production.up.railway.app/v1
