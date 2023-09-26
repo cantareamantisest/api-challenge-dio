@@ -12,7 +12,8 @@ O notebook para testar esta API, bem como o Pipeline ETL proposto para o desafio
 ## Principais Tecnologias
  - **.Net Core 6.0**: Utilizaremos a versão LTS do .Net Core para tirar vantagem das inovações que essa linguagem robusta e amplamente utilizada oferece;
  - **Entity Framework Core**: Exploraremos como essa ferramenta pode simplificar nossa camada de acesso aos dados, facilitando a integração com bancos de dados SQL utilizando todo potencial que a feature 'Migration' é capaz de oferecer;
- - **SQlite**: SQLite é uma biblioteca em processo que implementa um mecanismo de banco de dados SQL transacional independente, sem servidor e com configuração zero. 
+ - **SQlite**: SQLite é uma biblioteca em processo que implementa um mecanismo de banco de dados SQL transacional independente, sem servidor e com configuração zero.
+ - **MailKit**: é uma biblioteca .Net multiplataforma para envio de email construída sobre o [MimeKit](https://github.com/jstedfast/MimeKit).
  - **OpenAPI (Swagger)**: Vamos criar uma documentação de API eficaz e fácil de entender usando a OpenAPI (Swagger).
  - **Docker**: uma plataforma open source que facilita a criação e administração de ambientes isolados. Ele possibilita o empacotamento de uma aplicação ou ambiente dentro de um container, se tornando portátil para qualquer outro host que contenha o Docker instalado. Então, você consegue criar, implantar, copiar e migrar de um ambiente para outro com maior flexibilidade.
  - **Railway**: facilita o deploy e monitoramento de nossas soluções na nuvem, além de oferecer diversos bancos de dados como serviço e pipelines de CI/CD.
