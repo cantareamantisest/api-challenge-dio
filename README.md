@@ -23,7 +23,9 @@ O notebook para testar esta API, bem como o Pipeline ETL proposto para o desafio
 ```mermaid
 classDiagram
   class User {
-    -String name
+    -String firstname
+    -String lastname
+    -String email
     -Account account
     -Feature[] features
     -Card card
@@ -50,6 +52,12 @@ classDiagram
   class News {
     -String icon
     -String description
+  }
+
+  class AppSettings {
+    -String hostname
+    -String usermane
+    -String password
   }
 
   User "1" *-- "1" Account
