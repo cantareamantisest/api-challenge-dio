@@ -7,6 +7,7 @@ namespace SampleRestApi.Data
     public class AppDbContext : DbContext
     {
         public DbSet<Account> Accounts { get; set; }
+        public DbSet<AppSettings> AppSettings { get; set; }
         public DbSet<Card> Cards { get; set; }
         public DbSet<Features> Features { get; set; }
         public DbSet<News> News { get; set; }
@@ -20,6 +21,7 @@ namespace SampleRestApi.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new AccountMap());
+            modelBuilder.ApplyConfiguration(new AppSettingsMap());
             modelBuilder.ApplyConfiguration(new CardMap());
             modelBuilder.ApplyConfiguration(new FeaturesMap());
             modelBuilder.ApplyConfiguration(new NewsMap());

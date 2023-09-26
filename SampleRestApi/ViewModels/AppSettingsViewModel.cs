@@ -2,10 +2,13 @@
 
 namespace SampleRestApi.ViewModels
 {
-    public class SmtpServerViewModel
+    public class AppSettingsViewModel
     {
+        [Key]
+        public long Id { get; set; }
+
         [Required]
-        public string Host { get; set; } = string.Empty;
+        public string Hostname { get; set; } = string.Empty;
 
         [Required]
         public string Username { get; set; } = string.Empty;

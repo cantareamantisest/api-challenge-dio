@@ -9,6 +9,7 @@ namespace SampleRestApi.Configurations
         public AutoMapperProfile()
         {
             CreateMap<Account, AccountViewModel>().ReverseMap();
+            CreateMap<AppSettings, AppSettingsViewModel>().ReverseMap();
             CreateMap<Card, CardViewModel>().ReverseMap();
             CreateMap<Features, FeaturesViewModel>().ReverseMap();
             CreateMap<News, NewsViewModel>().ReverseMap();

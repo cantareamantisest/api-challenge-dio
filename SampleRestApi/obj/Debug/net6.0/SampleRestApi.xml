@@ -4,12 +4,12 @@
         <name>SampleRestApi</name>
     </assembly>
     <members>
-        <member name="M:SampleRestApi.Controllers.AppSettingsController.PutAsync(SampleRestApi.ViewModels.SmtpServerViewModel)">
+        <member name="M:SampleRestApi.Controllers.AppSettingsController.PutAsync(SampleRestApi.ViewModels.AppSettingsViewModel)">
             <summary>
             Atualizar configuração do servidor SMTP
             </summary>
             <remarks>
-            Atualiza a configuração do servidor SMTP para testar o envio de Email. Observação: Crie uma conta no link www.etheral.com
+            Atualiza a configuração do servidor SMTP para testar o envio de Email. Observação: Crie uma conta no link https://ethereal.email
             </remarks>
             <returns name="model">
             Configuração atualizada com sucesso!
@@ -178,6 +178,18 @@
             <inheritdoc />
         </member>
         <member name="M:SampleRestApi.Migrations.UpdateUser.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:SampleRestApi.Migrations.AddAppSettingsTable">
+            <inheritdoc />
+        </member>
+        <member name="M:SampleRestApi.Migrations.AddAppSettingsTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SampleRestApi.Migrations.AddAppSettingsTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:SampleRestApi.Migrations.AddAppSettingsTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

@@ -1,28 +1,36 @@
 ﻿using MailKit.Net.Smtp;
 using MailKit.Security;
+using Microsoft.EntityFrameworkCore;
 using MimeKit;
+using SampleRestApi.Data;
 using SampleRestApi.Service.Interfaces;
-using SampleRestApi.Utils;
 using SampleRestApi.ViewModels;
 
 namespace SampleRestApi.Service
 {
     public class EmailService : IEmailService
     {
+        private readonly AppDbContext _context;
+
+        public EmailService(AppDbContext context)
+        {
+            _context = context;
+        }
+
         public bool SendEmail(EmailViewModel request)
         {
             try
             {
-                var config = ConfigurationOperations.ReadConfiguration();
+                var config = _context.AppSettings.AsNoTracking().FirstOrDefault(c => c.Id > 0);
                 var mimeMessage = new MimeMessage();
-                mimeMessage.From.Add(MailboxAddress.Parse(config.SmtpServer.Username));
+                mimeMessage.From.Add(MailboxAddress.Parse(config?.Username));
                 mimeMessage.To.Add(MailboxAddress.Parse(request.To));
                 mimeMessage.Subject = request.Subject;
                 mimeMessage.Body = new TextPart(MimeKit.Text.TextFormat.Plain) { Text = request.Body };
 
                 using var smtp = new SmtpClient();
-                smtp.Connect(config.SmtpServer.Host, 587, SecureSocketOptions.StartTls);
-                smtp.Authenticate(config.SmtpServer.Username, config.SmtpServer.Password);
+                smtp.Connect(config?.Hostname, 587, SecureSocketOptions.StartTls);
+                smtp.Authenticate(config?.Username, config?.Password);
                 smtp.Send(mimeMessage);
                 smtp.Disconnect(true);
 

@@ -48,31 +48,6 @@ namespace SampleRestApi.Controllers
         }
 
         /// <summary>
-        /// Obter uma lista dos usuários por sobrenome com limite
-        /// </summary>
-        /// <remarks>
-        /// Obtém uma lista com filtro baseado no sobrenome dos usuários cadastrados
-        /// </remarks>
-        /// <returns></returns>
-        /// <response code="200">
-        /// Success
-        /// </response>
-        //[HttpGet]
-        //[Route("users")]
-        //public async Task<ActionResult<IEnumerable<UserViewModel>>> GetByLastnameAsync([FromRoute] string lastName, [FromRoute] int limit = 5)
-        //{
-        //    var users = await _context.Users
-        //        .Include(c => c.Account)
-        //        .Include(c => c.Card)
-        //        .Include(c => c.Features)
-        //        .Include(c => c.News)
-        //        .AsNoTracking()
-        //        .Where(c => c.LastName == lastName)
-        //        .ToListAsync();
-        //    return Ok(_mapper.Map<IEnumerable<UserViewModel>>(users));
-        //}
-
-        /// <summary>
         /// Obter um usuário pelo Id
         /// </summary>
         /// <remarks>
@@ -206,9 +181,9 @@ namespace SampleRestApi.Controllers
                 await _context.SaveChangesAsync();
                 return Ok(user);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError);
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
 

@@ -13,7 +13,6 @@ namespace SampleRestApi.ViewModels
         public string Icon { get; set; } = string.Empty;
 
         [Required]
-        [StringLength(100)]
         public string Description { get; set; } = string.Empty;
 
         [JsonIgnore]
