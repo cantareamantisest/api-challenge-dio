@@ -1,11 +1,13 @@
 
 # API Challenge [DIO](www.dio.me)
 
-RESTful API do Desafio do Bootcamp Santander 2023 construída em .Net Core 6.0.
+RESTful API do Desafio do Bootcamp Santander 2023 construída em .Net 6.0.
 
 Esta API é um projeto elaborado em C#, cuja a ideia original é do Tech Lead da DIO [Venilton](https://github.com/falvojr).
 
 O projeto original é desenvolvida em Java e está disponível no [GitHub](https://github.com/digitalinnovationone/santander-dev-week-2023-api) da DIO.
+
+O notebook para testar esta API, bem como o Pipeline ETL proposto para o desafio se encontra no [Colab Research Google](https://colab.research.google.com/drive/1jzCA-s-fhsf9GvZSEJl77xPGebn17mC3#scrollTo=Y8_axE7uMUSa)
 
 ## Principais Tecnologias
  - **.Net Core 6.0**: Utilizaremos a versão LTS do .Net Core para tirar vantagem das inovações que essa linguagem robusta e amplamente utilizada oferece;
